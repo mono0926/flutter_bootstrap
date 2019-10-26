@@ -4,13 +4,16 @@ import 'package:provider/provider.dart';
 import 'app.dart';
 import 'router.dart';
 
-void main() => runApp(
-      MultiProvider(
-        providers: [
-          Provider(
-            builder: (context) => Router(),
-          )
-        ],
-        child: const App(),
-      ),
-    );
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(
+    MultiProvider(
+      providers: [
+        Provider(
+          builder: (context) => Router(),
+        )
+      ],
+      child: const App(),
+    ),
+  );
+}
