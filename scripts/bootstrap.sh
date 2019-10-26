@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 name=$1
 
-#flutter create \
-#  --org com.mono0926 \
-#  ${name}
+flutter create \
+  --org com.mono0926 \
+  ${name}
 
 rm -rf ${name}/lib
 rm -rf ${name}/test
