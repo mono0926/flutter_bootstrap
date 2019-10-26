@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 name=$1
 
+rm -rf ${name}
+
 flutter create \
   --org com.mono0926 \
   ${name}
