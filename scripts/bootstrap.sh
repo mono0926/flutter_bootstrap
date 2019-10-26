@@ -14,3 +14,4 @@ sed -e "s/flutter_bootstrap/${name}/g" pubspec.yaml > ${name}/pubspec.yaml
 
 cd ${name}
 flutter packages get
+open .
