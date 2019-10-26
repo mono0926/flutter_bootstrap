@@ -13,6 +13,8 @@ rm -rf ${name}/test
 cp -r lib ${name}
 cp -r test ${name}
 cp -r assets ${name}
+cp analysis_options.yaml ${name}
+cp LICENSE ${name}
 sed -e "s/flutter_bootstrap/${name}/g" pubspec.yaml > ${name}/pubspec.yaml
 
 cd ${name}
