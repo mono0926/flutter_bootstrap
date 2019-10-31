@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 name=$1
+cd generated
 
+source=../app
 rm -rf ${name}
 
 flutter create \
@@ -10,13 +12,11 @@ flutter create \
 rm -rf ${name}/lib
 rm -rf ${name}/test
 
-cp -r lib ${name}
-cp -r test ${name}
-cp -r assets ${name}
-cp analysis_options.yaml ${name}
-cp LICENSE ${name}
-sed -e "s/flutter_bootstrap/${name}/g" pubspec.yaml > ${name}/pubspec.yaml
+cp -r ${source}/lib ${name}
+cp -r ${source}/test ${name}
+cp -r ${source}/assets ${name}
+cp ../analysis_options.yaml ${name}
+cp ../LICENSE ${name}
+sed -e "s/flutter_bootstrap/${name}/g" ${source}/pubspec.yaml > ${name}/pubspec.yaml
 
-cd ${name}
-flutter packages get
-open .
+open ${name}
