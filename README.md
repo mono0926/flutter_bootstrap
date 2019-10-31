@@ -8,6 +8,8 @@
 ./scripts/bootstrap.sh
 ```
 
+The project will be generated on `generated` directory.
+
 ## Add Firebase
 
 See [Add Firebase to your Flutter app](https://firebase.google.com/docs/flutter/setup#top_of_page)

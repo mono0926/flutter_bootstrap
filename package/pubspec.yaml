@@ -1,0 +1,19 @@
+name: flutter_bootstrap
+description: TODO
+version: 0.0.1
+author: Masayuki Ono <mono0926@gmail.com>
+homepage: https://github.com/mono0926/flutter_bootstrap
+environment:
+  sdk: ">=2.5.0 <3.0.0"
+dependencies:
+#  flutter:
+#    sdk: flutter
+#  cloud_firestore:
+#  firebase:
+  simple_logger: ^1.5.1
+  meta:
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pedantic_mono: any
+flutter:
