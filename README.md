@@ -5,7 +5,10 @@
 ## Create plain project
 
 ```bash
+# Flutter App
 ./scripts/bootstrap.sh
+# Package(including example)
+./scripts/bootstrap_package.sh
 ```
 
 The project will be generated on `generated` directory.
