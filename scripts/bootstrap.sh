@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 name=$1
+mkdir generated
 cd generated
 
 source=../app
