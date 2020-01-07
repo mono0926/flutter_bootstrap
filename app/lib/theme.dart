@@ -2,5 +2,10 @@ import 'package:flutter/material.dart';
 
 ThemeData buildTheme() {
   final base = ThemeData.light();
-  return base;
+  return base.copyWith(
+    snackBarTheme: base.snackBarTheme.copyWith(
+      behavior: SnackBarBehavior.floating,
+    ),
+    splashFactory: InkRipple.splashFactory,
+  );
 }
