@@ -10,7 +10,7 @@ void main() {
     MultiProvider(
       providers: [
         Provider(
-          builder: (context) => Router(),
+          create: (context) => Router(),
         )
       ],
       child: const App(),
