@@ -7,5 +7,6 @@ ThemeData buildTheme() {
       behavior: SnackBarBehavior.floating,
     ),
     splashFactory: InkRipple.splashFactory,
+    typography: Typography.material2018(),
   );
 }

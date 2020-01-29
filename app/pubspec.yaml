@@ -3,7 +3,7 @@ description: A new Flutter application.
 version: 1.0.0+1
 environment:
   sdk: ">=2.8.0-dev <3.0.0"
-  flutter: ">=1.14.5 <2.0.0"
+  flutter: ">=1.14.6 <2.0.0"
 dependencies:
   flutter:
     sdk: flutter
