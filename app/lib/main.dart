@@ -1,19 +1,3 @@
-import 'package:flutter/widgets.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_bootstrap/run.dart';
 
-import 'app.dart';
-import 'router.dart';
-
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  runApp(
-    MultiProvider(
-      providers: [
-        Provider(
-          create: (context) => Router(),
-        )
-      ],
-      child: const App(),
-    ),
-  );
-}
+void main() => run();
