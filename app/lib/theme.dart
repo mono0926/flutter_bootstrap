@@ -1,12 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:mono_kit/mono_kit.dart';
 
-ThemeData buildTheme() {
-  final base = ThemeData.light();
-  return base.copyWith(
-    snackBarTheme: base.snackBarTheme.copyWith(
-      behavior: SnackBarBehavior.floating,
+ThemeData buildLightTheme() {
+  return ThemeData.from(
+    colorScheme: ColorScheme.light(
+      // TODO(mono): 変える
+      primary: Colors.blue,
+      secondary: Colors.lightBlueAccent,
     ),
-    splashFactory: InkRipple.splashFactory,
-    typography: Typography.material2018(),
-  );
+  ).followLatestSpec();
+}
+
+ThemeData buildDarkTheme() {
+  return ThemeData.from(
+    colorScheme: ColorScheme.dark(
+      // TODO(mono): 変える
+      secondary: Colors.lightBlueAccent,
+    ),
+  ).followLatestSpec();
 }

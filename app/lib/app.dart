@@ -13,7 +13,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     const title = 'mono_kit Demo';
     return MaterialApp(
-      theme: buildTheme(),
+      theme: buildLightTheme(),
+      darkTheme: buildDarkTheme(),
       title: title,
       home: const HomePage(),
       onGenerateRoute: Provider.of<Router>(context).onGenerateRoute,
