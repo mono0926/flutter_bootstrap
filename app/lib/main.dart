@@ -1,3 +1,3 @@
-import 'package:flutter_bootstrap/run.dart';
+import 'run.dart';
 
 void main() => run();
