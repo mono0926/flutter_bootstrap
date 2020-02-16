@@ -13,6 +13,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     const title = 'mono_kit Demo';
     return MaterialApp(
+      navigatorKey: context.watch(),
       theme: buildLightTheme(),
       darkTheme: buildDarkTheme(),
       title: title,

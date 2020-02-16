@@ -9,9 +9,8 @@ void run() {
   runApp(
     MultiProvider(
       providers: [
-        Provider(
-          create: (context) => Router(),
-        )
+        Provider(create: (context) => GlobalKey<NavigatorState>()),
+        Provider(create: (context) => Router()),
       ],
       child: const App(),
     ),
