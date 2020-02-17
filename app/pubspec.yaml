@@ -11,6 +11,7 @@ dependencies:
   collection:
   cupertino_icons:
   disposable_provider:
+  enum_to_string:
   freezed_annotation:
   json_annotation:
   mono_kit: ^0.14.0-dev
