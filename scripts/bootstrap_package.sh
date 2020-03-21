@@ -22,8 +22,9 @@ cp ../analysis_options.yaml ${name}
 cp ../LICENSE ${name}
 sed -e "s/flutter_bootstrap/${name}/g" ${source}/pubspec.yaml > ${name}/pubspec.yaml
 
-../scripts/bootstrap.sh example
-rm example/analysis_options.yaml
-mv -f example ${name}
+cd -
+./scripts/bootstrap.sh example
+rm generated/example/analysis_options.yaml
+mv -f generated/example generated/${name}
 
 open ${name}
