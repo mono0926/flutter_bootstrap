@@ -2,8 +2,8 @@ name: flutter_bootstrap
 description: A new Flutter application.
 version: 1.0.0+1
 environment:
-  sdk: ">=2.8.0-dev <3.0.0"
-  flutter: ">=1.15.2 <2.0.0"
+  sdk: ">=2.8.0 <3.0.0"
+  flutter: ">=1.17.0 <2.0.0"
 dependencies:
   flutter:
     sdk: flutter
@@ -14,7 +14,7 @@ dependencies:
   enum_to_string:
   freezed_annotation:
   json_annotation:
-  mono_kit: ^0.14.0-dev
+  mono_kit:
   provider:
   rxdart:
   vsync_provider:
@@ -25,8 +25,6 @@ dev_dependencies:
   freezed:
   json_serializable:
   pedantic_mono:
-dependency_overrides:
-  provider: 4.1.0-dev
 flutter:
   uses-material-design: true
 #  assets:
