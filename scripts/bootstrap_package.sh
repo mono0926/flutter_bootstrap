@@ -25,6 +25,6 @@ sed -e "s/flutter_bootstrap/${name}/g" ${source}/pubspec.yaml > ${name}/pubspec.
 cd -
 ./scripts/bootstrap.sh example
 rm generated/example/analysis_options.yaml
-mv -f generated/example generated/${name}
+mv -f generated/example generated/${name}/
 
 open ${name}
